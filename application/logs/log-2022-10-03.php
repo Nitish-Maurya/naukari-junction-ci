@@ -1,0 +1,35 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-10-03 01:38:03 --> 404 Page Not Found: Wp-commentinphp/index
+ERROR - 2022-10-03 01:44:40 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-10-03 02:33:38 --> 404 Page Not Found: Wp-includes/ID3
+ERROR - 2022-10-03 02:33:38 --> 404 Page Not Found: Feed/index
+ERROR - 2022-10-03 02:33:39 --> 404 Page Not Found: Xmlrpcphp/index
+ERROR - 2022-10-03 02:33:39 --> 404 Page Not Found: Blog/wp-includes
+ERROR - 2022-10-03 02:33:39 --> 404 Page Not Found: Web/wp-includes
+ERROR - 2022-10-03 02:33:39 --> 404 Page Not Found: Wordpress/wp-includes
+ERROR - 2022-10-03 02:33:40 --> 404 Page Not Found: Wp/wp-includes
+ERROR - 2022-10-03 02:33:40 --> 404 Page Not Found: 2020/wp-includes
+ERROR - 2022-10-03 02:33:41 --> 404 Page Not Found: 2019/wp-includes
+ERROR - 2022-10-03 02:33:41 --> 404 Page Not Found: 2021/wp-includes
+ERROR - 2022-10-03 02:33:41 --> 404 Page Not Found: Shop/wp-includes
+ERROR - 2022-10-03 02:33:41 --> 404 Page Not Found: Wp1/wp-includes
+ERROR - 2022-10-03 02:33:42 --> 404 Page Not Found: Test/wp-includes
+ERROR - 2022-10-03 02:33:42 --> 404 Page Not Found: Site/wp-includes
+ERROR - 2022-10-03 02:33:42 --> 404 Page Not Found: Cms/wp-includes
+ERROR - 2022-10-03 04:46:59 --> 404 Page Not Found: Wp-includes/wlwmanifest.xml
+ERROR - 2022-10-03 04:46:59 --> 404 Page Not Found: Administrator/index.php
+ERROR - 2022-10-03 04:47:00 --> 404 Page Not Found: View-source:/index
+ERROR - 2022-10-03 04:47:00 --> 404 Page Not Found: Misc/ajax.js
+ERROR - 2022-10-03 06:44:53 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 07:52:08 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 08:15:58 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-10-03 10:22:47 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 11:47:59 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 13:08:13 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 13:13:00 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 13:13:00 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 14:51:11 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-10-03 15:26:20 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 21:05:47 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-10-03 23:28:39 --> 404 Page Not Found: Robotstxt/index

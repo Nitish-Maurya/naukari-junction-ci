@@ -1,0 +1,5 @@
+__ci_last_regenerate|i:1642833298;uname|s:15:"admin@gmail.com";error|s:411:"<div class="alert alert-success alert-dismissible" role="alert">
+                                <i class="fa fa-check"></i>
+                              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                              <strong>Success!</strong> Your category not added...
+                           </div>";__ci_vars|a:1:{s:5:"error";s:3:"old";}

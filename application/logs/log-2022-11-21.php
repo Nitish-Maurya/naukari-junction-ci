@@ -1,0 +1,32 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-11-21 00:48:15 --> 404 Page Not Found: _ignition/health-check
+ERROR - 2022-11-21 00:48:17 --> 404 Page Not Found: Public/_ignition
+ERROR - 2022-11-21 00:48:19 --> 404 Page Not Found: Wp-includes/wlwmanifest.xml
+ERROR - 2022-11-21 02:38:15 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 05:50:37 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 05:55:43 --> 404 Page Not Found: Search/label
+ERROR - 2022-11-21 08:15:28 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 08:22:02 --> 404 Page Not Found: Feeds/1438701515609833080
+ERROR - 2022-11-21 08:22:10 --> 404 Page Not Found: Feeds/8772840521396691859
+ERROR - 2022-11-21 08:22:43 --> 404 Page Not Found: Search/index
+ERROR - 2022-11-21 08:35:39 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 09:44:07 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 09:44:11 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 10:04:29 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 10:04:31 --> 404 Page Not Found: 2019/06
+ERROR - 2022-11-21 10:32:41 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 10:58:17 --> 404 Page Not Found: Git/config
+ERROR - 2022-11-21 11:38:43 --> 404 Page Not Found: Wikindexphp/index
+ERROR - 2022-11-21 11:38:44 --> 404 Page Not Found: Wp-content/mu-plugins-old
+ERROR - 2022-11-21 11:38:44 --> 404 Page Not Found: 3indexphp/index
+ERROR - 2022-11-21 11:38:44 --> 404 Page Not Found: Adminphp/index
+ERROR - 2022-11-21 11:38:45 --> 404 Page Not Found: Wp-customizephp/index
+ERROR - 2022-11-21 11:38:45 --> 404 Page Not Found: Wp-content/languages
+ERROR - 2022-11-21 12:04:35 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 13:00:33 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 13:54:17 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 16:16:25 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-21 16:18:54 --> 404 Page Not Found: 2019/06
+ERROR - 2022-11-21 17:26:24 --> 404 Page Not Found: Wp-loginphp/index
+ERROR - 2022-11-21 17:32:42 --> 404 Page Not Found: Robotstxt/index

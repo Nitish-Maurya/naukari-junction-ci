@@ -1,0 +1,34 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-11-25 00:44:47 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 04:03:47 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 04:03:50 --> 404 Page Not Found: 2019/06
+ERROR - 2022-11-25 06:27:59 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 06:32:13 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-11-25 06:32:44 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-11-25 06:32:57 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-11-25 07:28:44 --> 404 Page Not Found: Wp-includes/wlwmanifest.xml
+ERROR - 2022-11-25 07:28:45 --> 404 Page Not Found: Administrator/index.php
+ERROR - 2022-11-25 07:28:45 --> 404 Page Not Found: View-source:/index
+ERROR - 2022-11-25 07:28:45 --> 404 Page Not Found: Misc/ajax.js
+ERROR - 2022-11-25 07:44:25 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 08:41:40 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 09:21:31 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 13:03:57 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-11-25 13:04:31 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-11-25 13:41:02 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 13:41:02 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 13:41:02 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 14:08:45 --> 404 Page Not Found: Wp-22php/index
+ERROR - 2022-11-25 16:07:42 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 16:21:07 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 16:47:51 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 16:47:52 --> 404 Page Not Found: Humanstxt/index
+ERROR - 2022-11-25 16:47:53 --> 404 Page Not Found: Adstxt/index
+ERROR - 2022-11-25 17:45:33 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 17:49:03 --> 404 Page Not Found: Feeds/7211749663429775677
+ERROR - 2022-11-25 18:19:52 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 20:41:55 --> 404 Page Not Found: Wp-content/themes
+ERROR - 2022-11-25 20:47:10 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 23:04:13 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-11-25 23:06:51 --> 404 Page Not Found: Search/label

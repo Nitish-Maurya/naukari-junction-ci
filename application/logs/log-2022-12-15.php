@@ -1,0 +1,32 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-12-15 02:54:41 --> 404 Page Not Found: Env/index
+ERROR - 2022-12-15 02:56:31 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-15 02:56:35 --> 404 Page Not Found: 2019/06
+ERROR - 2022-12-15 05:12:07 --> 404 Page Not Found: Env/index
+ERROR - 2022-12-15 05:12:08 --> 404 Page Not Found: Dev/.env
+ERROR - 2022-12-15 05:12:09 --> 404 Page Not Found: Laravel/.env
+ERROR - 2022-12-15 05:12:09 --> 404 Page Not Found: Core/.env
+ERROR - 2022-12-15 05:12:10 --> 404 Page Not Found: Shop/.env
+ERROR - 2022-12-15 05:12:10 --> 404 Page Not Found: Project/.env
+ERROR - 2022-12-15 05:12:11 --> 404 Page Not Found: Blog/.env
+ERROR - 2022-12-15 05:12:12 --> 404 Page Not Found: Test/.env
+ERROR - 2022-12-15 05:12:12 --> 404 Page Not Found: Admin/.env
+ERROR - 2022-12-15 05:12:13 --> 404 Page Not Found: App/.env
+ERROR - 2022-12-15 05:12:13 --> 404 Page Not Found: Local/.env
+ERROR - 2022-12-15 05:12:14 --> 404 Page Not Found: Api/.env
+ERROR - 2022-12-15 05:12:15 --> 404 Page Not Found: Src/.env
+ERROR - 2022-12-15 05:12:15 --> 404 Page Not Found: Wp-admin/.env
+ERROR - 2022-12-15 05:12:16 --> 404 Page Not Found: Production/.env
+ERROR - 2022-12-15 05:12:17 --> 404 Page Not Found: Crm/.env
+ERROR - 2022-12-15 05:12:17 --> 404 Page Not Found: New/.env
+ERROR - 2022-12-15 06:20:40 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-12-15 06:20:43 --> 404 Page Not Found: Faviconico/index
+ERROR - 2022-12-15 07:38:29 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-15 09:12:56 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-15 13:17:03 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-15 16:35:15 --> 404 Page Not Found: Wp-commentinphp/index
+ERROR - 2022-12-15 17:35:16 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-15 18:49:01 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-15 20:11:48 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-15 21:34:42 --> 404 Page Not Found: Robotstxt/index

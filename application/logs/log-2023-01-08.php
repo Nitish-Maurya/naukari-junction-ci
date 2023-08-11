@@ -1,0 +1,37 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2023-01-08 00:22:27 --> 404 Page Not Found: Wp-content/index
+ERROR - 2023-01-08 01:41:34 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-01-08 01:41:40 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-01-08 02:55:19 --> 404 Page Not Found: Typo3conf/ext
+ERROR - 2023-01-08 03:19:55 --> 404 Page Not Found: Wp-commentinphp/index
+ERROR - 2023-01-08 03:59:48 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-01-08 03:59:49 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-01-08 06:28:04 --> 404 Page Not Found: Faviconico/index
+ERROR - 2023-01-08 09:01:33 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-01-08 10:18:22 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-01-08 19:57:08 --> 404 Page Not Found: Wp-includes/wlwmanifest.xml
+ERROR - 2023-01-08 19:57:08 --> 404 Page Not Found: Xmlrpcphp/index
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Blog/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Web/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Wordpress/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Website/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Wp/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: News/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: 2018/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: 2019/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Shop/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Wp1/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Test/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Media/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Wp2/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Site/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Cms/wp-includes
+ERROR - 2023-01-08 19:57:09 --> 404 Page Not Found: Sito/wp-includes
+ERROR - 2023-01-08 22:00:27 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2023-01-08 23:25:09 --> 404 Page Not Found: Wp-admin/css
+ERROR - 2023-01-08 23:25:15 --> 404 Page Not Found: Well-known/index
+ERROR - 2023-01-08 23:25:18 --> 404 Page Not Found: Sites/default
+ERROR - 2023-01-08 23:25:22 --> 404 Page Not Found: Admin/controller
+ERROR - 2023-01-08 23:25:29 --> 404 Page Not Found: Images/index
+ERROR - 2023-01-08 23:25:32 --> 404 Page Not Found: Files/index

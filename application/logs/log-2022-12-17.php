@@ -1,0 +1,29 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-12-17 00:42:40 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 06:30:17 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 08:46:31 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 12:20:23 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 12:20:25 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 12:20:42 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 12:21:40 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 12:52:13 --> 404 Page Not Found: Vendor/phpunit
+ERROR - 2022-12-17 14:44:56 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 14:45:09 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 16:58:55 --> 404 Page Not Found: Wikindexphp/index
+ERROR - 2022-12-17 16:58:55 --> 404 Page Not Found: Adminphp/index
+ERROR - 2022-12-17 16:58:55 --> 404 Page Not Found: Class-wp-widget-archivesphp/index
+ERROR - 2022-12-17 16:58:55 --> 404 Page Not Found: 3indexphp/index
+ERROR - 2022-12-17 16:58:55 --> 404 Page Not Found: 1indexphp/index
+ERROR - 2022-12-17 16:58:55 --> 404 Page Not Found: 3indexphp/index
+ERROR - 2022-12-17 16:58:56 --> 404 Page Not Found: Wp-content/mu-plugins-old
+ERROR - 2022-12-17 16:58:56 --> 404 Page Not Found: 1indexphp/index
+ERROR - 2022-12-17 16:58:56 --> 404 Page Not Found: 2indexphp/index
+ERROR - 2022-12-17 16:58:56 --> 404 Page Not Found: Wikindexphp/index
+ERROR - 2022-12-17 16:58:57 --> 404 Page Not Found: Adminphp/index
+ERROR - 2022-12-17 16:58:57 --> 404 Page Not Found: 2indexphp/index
+ERROR - 2022-12-17 17:28:52 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 22:17:46 --> 404 Page Not Found: Wp-content/themes
+ERROR - 2022-12-17 22:17:52 --> 404 Page Not Found: Wp-content/themes
+ERROR - 2022-12-17 22:22:37 --> 404 Page Not Found: Robotstxt/index
+ERROR - 2022-12-17 23:40:45 --> 404 Page Not Found: Robotstxt/index
