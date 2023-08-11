@@ -325,11 +325,28 @@ class Recruiter extends CI_controller
 		$data['plan_info']=$plan_info;
 		$data['resume_download']=$resume_download;
 		$data['job_post']=$job_post;
+		$data['profile_complete'] = $this->profileCompletePercent($rec_info);
 		$data['jp_plan_info']=$jp_plan_info;
 	
 		$this->load->view('recruiter_profile',$data);
 	}
 	
+
+	function profileCompletePercent($user_detail){
+		// if($user_detail->name)
+		$complete = 0;
+		
+			$profile_field = ['name','email','mno','org_type','location','address','website','company','img'];
+		
+		foreach($profile_field as $value){
+			$complete = (!empty($user_detail->$value) and $user_detail->$value != '' and !is_null($user_detail->$value)) ?$complete+1:$complete;
+			
+		}
+
+		$all_field = count($profile_field);
+		$percent = round(($complete*100)/$all_field);
+		return $percent;
+	}
 
 	function recruiter_profile_update()
 	{

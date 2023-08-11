@@ -312,10 +312,14 @@ function search1(){}
 
 	//profile percent complete
 
-	function profileCompletePercent($user_detail){
+	function profileCompletePercent($user_detail,$user_type = 'seekar'){
 		// if($user_detail->name)
 		$complete = 0;
+		if($user_type == 'seekar'):
 		$profile_field = ['name','surname','email','city','mno','gender','excepted','current_address','location','job_type','job_role','designation','qua','keyskills','resume','specialization','age','notice_period','p_year'];
+		else :
+			$profile_field = ['name','email','mno','org_type','location','address','website','company'];
+		endif;
 		foreach($profile_field as $value){
 			$complete = (!empty($user_detail->$value) and $user_detail->$value != '' and !is_null($user_detail->$value)) ?$complete+1:$complete;
 			
@@ -1387,7 +1391,7 @@ function search1(){}
 			{
 				// echo"<pre>";print_r('ok');
 				$plans_info=$this->db->select('*')->from('jp_plans')->where('status',1)->get();
-									$res=$q->result_array();;
+									// $res=$q->result_array();
 				//print_r($this->db->last_query());die;
 				
 				if($plans_info)

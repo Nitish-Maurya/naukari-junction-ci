@@ -74,7 +74,9 @@ if($fmsg)
                             </div>
                             <p id=""><?= $controller->set_language('change_logo'); ?></p>
                             <h3><?= $r1->name; ?></h3>
+                            <p>Profile Complete <?= round($profile_complete) ?>%</p>
                         </div>
+                        
                     </div>
                     <div class="col-md-8">
 					   <div class="row">
