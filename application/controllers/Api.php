@@ -2159,6 +2159,66 @@ class Api extends CI_Controller
             echo $json_single_job;
         }
     }
+
+    //recruiter profile percent
+
+    function recruiterProfileCompletePercent(){
+		// if($user_detail->name)
+       $login_user_id = $this->session->userdata['user_id'];
+       $user_detail =$this->Common_model->select_data('*', 'recruiter', ['id'=>$login_user_id]);
+        // $login_user_id = $this->session;
+        
+        // die($login_user_id);
+		$complete = 0;
+		
+			$profile_field = ['name','email','mno','org_type','location','address','website','company','img'];
+		
+		foreach($profile_field as $key => $value){
+           
+			$complete = (!empty($user_detail[0][$value]) and $user_detail[0][$value] != '' and !is_null($user_detail[0][$value])) ?$complete+1:$complete;
+			
+		}
+
+		$all_field = count($profile_field);
+		$percent = round(($complete*100)/$all_field);
+        $j_arr = array(
+            'staus' => 'true',
+            'message' => 'Profile Completed Percent',
+            'data' => $percent,
+        );
+        $percent = json_encode($j_arr);
+        echo $percent;
+	}
+
+    function seekerProfileCompletePercent(){
+		// if($user_detail->name)
+       $login_user_id = $this->session->userdata['user_id'];
+       $user_detail =$this->Common_model->select_data('*', 'seeker', ['id'=>$login_user_id]);
+        // $login_user_id = $this->session;
+        
+        // die($login_user_id);
+		$complete = 0;
+		
+			$profile_field = ['name','surname','email','city','mno','gender','excepted','current_address','location','job_type','job_role','designation','qua','keyskills','resume','specialization','age','notice_period','p_year'];
+		
+		foreach($profile_field as $key => $value){
+           
+			$complete = (!empty($user_detail[0][$value]) and $user_detail[0][$value] != '' and !is_null($user_detail[0][$value])) ?$complete+1:$complete;
+			
+		}
+
+		$all_field = count($profile_field);
+		$percent = round(($complete*100)/$all_field);
+        $j_arr = array(
+            'staus' => 'true',
+            'message' => 'Profile Completed Percent',
+            'data' => $percent,
+        );
+        $percent = json_encode($j_arr);
+        echo $percent;
+	}
+
+
     public function recruiter_profile_update()
     {
 
