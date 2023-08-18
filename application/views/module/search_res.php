@@ -1,12 +1,14 @@
  <?php
 					if(!empty($sres))
 					{
+					$i=0;
 					foreach($sres as $res)
 					{
 					?>	
 					<div class="jp_job_box">
                         <div class="job_detail">
                             <h3><?= $res->specialization ?></h3>
+                            <h6><?php echo $profile_match[$i]['percent']?? 0 ?>% Profile Match</h6>
                             <span><?= $this->db->select('COUNT(*) as total')->where('job_id', $res->id)->get('user_applied_job')->row_array()['total']; ?> <?= $controller->set_language('applied_keyword'); ?></span>
                             <ul>
                                 <li title="<?= $controller->set_language('h_work_exp'); ?>"><span><img src="<?= base_url('assets/images/experience.svg'); ?>" alt=""></span> <?= $res->experience; ?></li>
@@ -14,7 +16,7 @@
                             </ul>
                             <h4 title="<?= $controller->set_language('h_req_skils'); ?>">
                                 <span class="icon"></span>
-                                <span class="skills"><?= $res->job_role; ?></span>
+                                <span class="skills"><?= $res->job_role; ?></span> 
                             </h4>
                         </div>	
 						<?php	
@@ -49,6 +51,7 @@
 						?>
                     </div>
 					<?php
+					$i++;
 					}
 					?>
 					<div><?= $link ?></div>

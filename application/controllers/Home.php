@@ -61,6 +61,9 @@ class Home extends CI_Controller
 		$exp_count=$this->Common_model->count_num('experience','Active','status');
 		$desi_count=$this->Common_model->count_num('designation','Active','status');
 		$job_post=$this->Common_model->select('job_post');     							 //Left Menu Value	
+		// echo "<pre>";
+		// print_r($job_post);
+		// die();
 		$location=array();
 		$job_type=array();
 		$qualification=array();
@@ -101,6 +104,9 @@ class Home extends CI_Controller
 		$data['exp']=$exp;
 		$data['desi']=$desi;
 		$data['custom_ads']=$custom_ads;
+		// echo "<pre>";
+		// print_r($data);
+		// die();
 		$this->load->view('user_home',$data);	
 	    $this->language_fatch('home_page');
 	}
@@ -113,11 +119,55 @@ class Home extends CI_Controller
 		  $res=$this->Common_model->fetch_details('recruiter_jobs',$ofset, $start);
 		  $link = $this->pagination->create_links();
           $this->language_fatch('home_page');
+		  
 		  $data['controller']=$this;
           $data['sres']=$res;
 		  $data['link']=$link;
+		  $data['profile_match'] = $this->jobMatchPercent($data['sres']);
+		//   echo "<pre>";
+		//   print_r($data);
+		
 		 $this->load->view('module/search_res',$data);
 	}
+
+	function jobMatchPercent($job) {
+		$job_index = ['job_type','designation','qualification','specialization'];
+		$user_id = $this->session->userdata('user_id');
+		$user_detail =$this->Common_model->select_data('*', 'seeker', ['id'=>$user_id]);
+
+		// print_r($user_detail);
+		// echo "<br>";
+		// echo "<pre>";
+		// print_r($job);
+		// die();
+		$per_arr=[];
+		$match = 0;
+		$i=0;
+		foreach($job as $key => $value){
+			if(strtolower($value->job_type) == strtolower($user_detail[0]['exp'])){
+				$match++;
+			}
+			if(strtolower($value->job_role) == strtolower($user_detail[0]['job_role'])){
+				$match++;
+			}
+			if(strtolower($value->designation) == strtolower($user_detail[0]['designation'])){
+				$match++;
+			}
+			if(strtolower($value->specialization) == strtolower($user_detail[0]['specialization'])){
+				$match++;
+			}
+			
+			$percent = round($match*100/count($job_index));
+			$per_arr[$i]['job_id']= $value->id;
+			$per_arr[$i]['percent']= $percent;
+			$i++;
+			
+		}
+		return $per_arr;
+	}
+
+	
+
 	//Job Full Detail View
 	function user_jobSingle($id='')
 	{
@@ -1711,6 +1761,9 @@ redirect(base_url());*/
 
 		 $this->load->view('mypost',$data);
 	}
+
+
+
 	
 }
 ?>

@@ -232,6 +232,7 @@ $(document).ready(function(){
 
  function load_country_data(page)
  {
+	
   $.ajax({
    url:"<?php echo base_url(); ?>index.php/Home/pagination/"+page,
    method:"GET",
