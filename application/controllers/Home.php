@@ -143,6 +143,7 @@ class Home extends CI_Controller
 		$per_arr=[];
 		$match = 0;
 		$i=0;
+		if(!empty($user_detail)){
 		foreach($job as $key => $value){
 			if(strtolower($value->job_type) == strtolower($user_detail[0]['exp'])){
 				$match++;
@@ -163,7 +164,9 @@ class Home extends CI_Controller
 			$i++;
 			
 		}
+	}
 		return $per_arr;
+	
 	}
 
 	
