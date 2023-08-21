@@ -37,7 +37,7 @@
                             <div class="col-md-6">
                                 <div class="jp_input_wrapper">
                                     <label id=""><?= $controller->set_language('job_type'); ?></label>
-                                    <select name="job_type" id="job_type" class="form-control">
+                                    <select name="job_type" id="job_type" class="form-control other">
                                         <option value="<?= $controller->set_language('job_post_select'); ?>" id="select_keyword"><?= $controller->set_language('job_post_select'); ?></option>
 										<?php
 										foreach($job_types as $jt)
@@ -48,12 +48,13 @@
 										}
 										?>
                                     </select>
+                                    
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="jp_input_wrapper">
                                     <label id=""><?= $controller->set_language('desi'); ?></label>
-                                    <select name="designation" id="designation" class="form-control">
+                                    <select name="designation" id="designation" class="form-control other">
 										<option value="<?= $controller->set_language('job_post_select'); ?>" id="select_keyword1"><?= $controller->set_language('job_post_select'); ?></option>
                                         <?php
 										foreach($designation as $desi)
@@ -69,7 +70,7 @@
                             <div class="col-md-6">
                                 <div class="jp_input_wrapper">
                                     <label id=""><?= $controller->set_language('qua'); ?></label>
-                                    <select name="qualification" id="qualification" class="form-control">
+                                    <select name="qualification" id="qualification" class="form-control other">
                                         <option value="<?= $controller->set_language('job_post_select'); ?>" id="select_keyword2"><?= $controller->set_language('job_post_select'); ?></option>
 										<?php
 										foreach($q as $q1)
@@ -85,7 +86,7 @@
                             <div class="col-md-6">
                                 <div class="jp_input_wrapper">
                                     <label id=""><?= $controller->set_language('job_location'); ?></label>
-									<select name="job_location" id="job_location" class="form-control">
+									<select name="job_location" id="job_location" class="form-control other">
                                         <option value="<?= $controller->set_language('job_post_select'); ?>" id="select_keyword3"><?= $controller->set_language('job_post_select'); ?></option>
 										<?php
 										foreach($loc as $loc1)
@@ -113,7 +114,7 @@
                             <div class="col-md-6">
                                 <div class="jp_input_wrapper">
                                     <label id=""><?= $controller->set_language('sp'); ?></label>
-                                    <select name="specialization" id="specialization" class="form-control">
+                                    <select name="specialization" id="specialization" class="form-control other">
 										<option value="<?= $controller->set_language('job_post_select'); ?>" id="select_keyword4"><?= $controller->set_language('job_post_select'); ?></option>
 										<?php
 										foreach($spec as $spec1)
@@ -145,7 +146,7 @@
                             <div class="col-md-6">
                                 <div class="jp_input_wrapper">
                                     <label id=""><?= $controller->set_language('job_exp'); ?></label>
-                                    <select name="exp" id="exp" class="form-control">
+                                    <select name="exp" id="exp" class="form-control other">
 									<option value="<?= $controller->set_language('job_post_select'); ?>" id="select_keyword6"><?= $controller->set_language('job_post_select'); ?></option>
 									<?php
 									foreach($experience as $exp)
@@ -174,7 +175,7 @@
                                 <div class="jp_input_wrapper">
                                     <label id="">JOb ROle</label>
                                     <!-- <input type="text" name="technology"  id="technology" class="form-control" /> -->
-                                    <select name="technology" id="technology" class="form-control">
+                                    <select name="technology" id="technology" class="form-control other">
 									<option value="<?= $controller->set_language('job_post_select'); ?>" id="select_keyword6"><?= $controller->set_language('job_post_select'); ?></option>
 									<?php
 									foreach($job_role as $exp)
@@ -270,6 +271,11 @@
        </div>
    </div>
 </div>
+
+
+
+
+
 <input type="hidden" name="pyear_empty" id="pyear_empty" value="<?= $controller->set_language_v('validation_pyeat'); ?>" class="form-control">
 <input type="hidden" name="job_type_empty" id="job_type_empty" value="<?= $controller->set_language_v('job_type_select'); ?>" class="form-control">
 <input type="hidden" name="desi_empty" id="desi_empty" value="<?= $controller->set_language_v('select_desi'); ?>" class="form-control">
@@ -297,5 +303,23 @@
 <input type="hidden" name="job_not_post" id="job_not_post" value="<?= $controller->set_language_v('job_not_post'); ?>" class="form-control">
 <?php include('common/footer_recruiter.php'); ?>
 <a href="#" id="jp_backToTop" title="Back to top">&uarr;</a>
+
+<script>
+$('.other').on('change',function(){
+   
+   var field_name= $(this).attr('name');
+   var v1 = $(this).val();
+   var id= $(this).attr('id');
+  
+   if(v1 == 'Other'){
+    
+    $('#'+id).after(`<input type="text" name="${field_name}" class="mt-3" id="${field_name}_input">`);
+   }else{
+    
+    $('#'+id+"_input").remove();
+   }
+});
+</script>
+
 </body>
 </html>

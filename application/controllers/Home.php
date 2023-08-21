@@ -104,9 +104,7 @@ class Home extends CI_Controller
 		$data['exp']=$exp;
 		$data['desi']=$desi;
 		$data['custom_ads']=$custom_ads;
-		// echo "<pre>";
-		// print_r($data);
-		// die();
+		
 		$this->load->view('user_home',$data);	
 	    $this->language_fatch('home_page');
 	}
