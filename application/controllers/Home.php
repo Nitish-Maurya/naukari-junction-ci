@@ -60,9 +60,10 @@ class Home extends CI_Controller
 		$qualification_count=$this->Common_model->count_num('qualification','Active','status');
 		$exp_count=$this->Common_model->count_num('experience','Active','status');
 		$desi_count=$this->Common_model->count_num('designation','Active','status');
-		$job_post=$this->Common_model->select('job_post');     							 //Left Menu Value	
+		$job_post=$this->Common_model->select('job_post'); 
+		    							 //Left Menu Value	
 		// echo "<pre>";
-		// print_r($job_post);
+		// print_r($requter_job_post);
 		// die();
 		$location=array();
 		$job_type=array();
@@ -121,7 +122,7 @@ class Home extends CI_Controller
 		  $data['controller']=$this;
           $data['sres']=$res;
 		  $data['link']=$link;
-		  $data['profile_match'] = $this->jobMatchPercent($data['sres']);
+		  $data['profile_match'] = $this->jobMatchPercent($res);
 		//   echo "<pre>";
 		//   print_r($data);
 		
@@ -129,7 +130,7 @@ class Home extends CI_Controller
 	}
 
 	function jobMatchPercent($job) {
-		$job_index = ['job_type','designation','qualification','specialization'];
+		$job_index = ['job_type','designation','qualification','specialization','location','experience','job_role'];
 		$user_id = $this->session->userdata('user_id');
 		$user_detail =$this->Common_model->select_data('*', 'seeker', ['id'=>$user_id]);
 
@@ -143,7 +144,7 @@ class Home extends CI_Controller
 		$i=0;
 		if(!empty($user_detail)){
 		foreach($job as $key => $value){
-			if(strtolower($value->job_type) == strtolower($user_detail[0]['exp'])){
+			if(strtolower($value->job_type) == strtolower($user_detail[0]['job_type'])){
 				$match++;
 			}
 			if(strtolower($value->job_role) == strtolower($user_detail[0]['job_role'])){
@@ -155,8 +156,17 @@ class Home extends CI_Controller
 			if(strtolower($value->specialization) == strtolower($user_detail[0]['specialization'])){
 				$match++;
 			}
+
+			if(strtolower($value->location) == strtolower($user_detail[0]['location'])){
+				$match++;
+			}
+
 			
-			$percent = round($match*100/count($job_index));
+
+			if(strtolower($value->experience) == strtolower($user_detail[0]['exp'])){
+				$match++;
+			}
+			$percent = round($match*100/count($job_index))>100 ? 100 : round($match*100/count($job_index));
 			$per_arr[$i]['job_id']= $value->id;
 			$per_arr[$i]['percent']= $percent;
 			$i++;
