@@ -1604,12 +1604,16 @@ class Api extends CI_Controller
     }
 
     public function seeker_info() {
-        $email = $this->input->post('seeker_email');
+        $email = $this->input->get('seeker_email');
+        $profile_percent = $this->seekerProfileCompletePercent($email);
+        
         if (!empty($email)) {
             $s_data = $this->db->where('email', $email)->or_where('id', $email)->get('seeker')->row_array();
             if (!empty($s_data)) {
                 $s_data['img'] = base_url($s_data['img']);
                 $s_data['resume'] = base_url($s_data['resume']);
+                $s_data['profile_percent'] = $profile_percent;
+            
                 // $s_data['p_year'] = "";
                 // $s_data['aofs'] = "";
                 // $s_data['veri'] = "";
@@ -2162,9 +2166,11 @@ class Api extends CI_Controller
 
     //recruiter profile percent
 
-    function recruiterProfileCompletePercent(){
+    function recruiterProfileCompletePercent($id=NULL){
 		// if($user_detail->name)
-       $login_user_id = $this->session->userdata['user_id'];
+       // var_dump($id); exit();
+       $login_user_id = empty($id)?$this->session->userdata['user_id']:$id;
+       //var_dump($login_user_id); exit();
        $user_detail =$this->Common_model->select_data('*', 'recruiter', ['id'=>$login_user_id]);
         // $login_user_id = $this->session;
         
@@ -2181,18 +2187,27 @@ class Api extends CI_Controller
 
 		$all_field = count($profile_field);
 		$percent = round(($complete*100)/$all_field);
-        $j_arr = array(
-            'staus' => 'true',
-            'message' => 'Profile Completed Percent',
-            'data' => $percent,
-        );
-        $percent = json_encode($j_arr);
-        echo $percent;
+        // $j_arr = array(
+        //     'staus' => 'true',
+        //     'message' => 'Profile Completed Percent',
+        //     'data' => $percent,
+        // );
+        //$percent = json_encode($j_arr);
+        ///var_dump($percent); exit();
+        return $percent;
 	}
 
-    function seekerProfileCompletePercent(){
+    function seekerProfileCompletePercent($email=NULL){
 		// if($user_detail->name)
-       $login_user_id = $this->session->userdata['user_id'];
+        //$login_user_id = $this->session->userdata['user_id'];
+
+        $login_user_id = !empty($email)?$email:$this->session->userdata['user_id'];
+    
+       $user_detail = empty($email)?$this->Common_model->select_data('*', 'seeker', ['id'=>$login_user_id]):$this->Common_model->select_data('*', 'seeker', ['email'=>$login_user_id]);
+      $column = empty($email)?'id':'email';
+       $user_detail =$this->Common_model->select_data('*', 'seeker', [$column=>$login_user_id]);
+      
+
        $user_detail =$this->Common_model->select_data('*', 'seeker', ['id'=>$login_user_id]);
         // $login_user_id = $this->session;
         
@@ -2214,8 +2229,12 @@ class Api extends CI_Controller
             'message' => 'Profile Completed Percent',
             'data' => $percent,
         );
+        if(empty($email)){
         $percent = json_encode($j_arr);
         echo $percent;
+        }else{
+            return $percent;
+        }
 	}
 
 
@@ -4040,7 +4059,9 @@ class Api extends CI_Controller
 
     public function recruiter_profile() {
         $id = $this->input->post('id');
+        $profile_percent = $this->recruiterProfileCompletePercent($id);
         if($resp = $this->db->where('id', $id)->get('recruiter')->row_array()) {
+            $resp['profile_percent'] = $profile_percent;
             $resp['img'] = base_url($resp['img']);
             // $resp['resume'] = base_url($resp['resume']);
 		    $response = ['status' => 'true', 'data' => $resp, 'message' => 'Updated recruiter profile'];
